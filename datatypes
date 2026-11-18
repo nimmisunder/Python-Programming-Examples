@@ -1,0 +1,191 @@
+# **Built-in Data Types in Python**
+
+Python has several built-in data types used to store different kinds of data.
+
+Let's understand them with examples and interview questions.
+
+## **1. Numeric types**
+
+Used to store numbers.
+
+| Type      | Example  | Description     |
+| --------- | -------- | --------------- |
+| `int`     | `10`     | Integer numbers |
+| `float`   | `10.5`   | Decimal numbers |
+| `complex` | `2 + 3j` | Complex numbers |
+
+```
+a = 10b = 10.5c = 2 + 3jprint(type(a))  # <class 'int'>print(type(b))  # <class 'float'>print(type(c))  # <class 'complex'>
+```
+
+## **2. String (**`str`**)**
+
+Used to store text.
+
+```
+name = "Nimmi"print(name)print(type(name))
+```
+
+Output:
+
+```
+Nimmi
+<class 'str'>
+```
+
+Strings are immutable, meaning you cannot modify individual characters directly.
+
+## **3. Boolean (**`bool`**)**
+
+Stores either `True` or `False`.
+
+```
+is_active = Trueis_logged_in = Falseprint(type(is_active))
+```
+
+Output:
+
+```
+<class 'bool'>
+```
+
+Commonly used in conditions.
+
+## **4. Sequence types**
+
+These store multiple values in an ordered collection.
+
+**List**
+
+Mutable
+
+```
+fruits = ["Apple", "Mango", "Orange"]fruits.append("Banana")
+```
+
+You can modify, add or remove elements.
+
+**Tuple**
+
+Immutable
+
+```
+numbers = (10, 20, 30)
+```
+
+Once created, its elements cannot be changed.
+
+**Range**
+
+```
+numbers = range(1, 5)print(list(numbers))
+```
+
+Output: `[1, 2, 3, 4]`
+
+## **5. Set types**
+
+Sets store unique values.
+
+**Set (**`set`**)**
+
+```
+numbers = {1, 2, 2, 3, 4}print(numbers)
+```
+
+Output:
+
+```
+{1, 2, 3, 4}
+```
+
+Duplicates are automatically removed.
+
+**Frozen set (**`frozenset`**)**
+
+An immutable version of a set.
+
+```
+numbers = frozenset([1, 2, 3])
+```
+
+You cannot add or remove elements.
+
+## **6. Dictionary (**`dict`**)**
+
+Stores data in key-value pairs.
+
+```
+student = {    "name": "Nimmi",    "age": 33,    "language": "Python"}print(student["name"])
+```
+
+Output:
+
+```
+Nimmi
+```
+
+Dictionaries are mutable.
+
+They are especially useful when working with JSON responses and API data in FastAPI.
+
+## **7. Binary types**
+
+Used to handle binary data such as files and byte streams.
+
+| Type         | Description                                                   |
+| ------------ | ------------------------------------------------------------- |
+| `bytes`      | Immutable binary data                                         |
+| `bytearray`  | Mutable binary data                                           |
+| `memoryview` | Provides access to memory without copying the underlying data |
+
+Example:
+
+```
+a = bytes([65, 66, 67])print(a)
+```
+
+Output:
+
+```
+b'ABC'
+```
+
+## **8. NoneType**
+
+Represents the absence of a value.
+
+```
+result = Noneprint(type(result))
+```
+
+Output:
+
+```
+<class 'NoneType'>
+```
+
+Commonly used when a function doesn't have a meaningful result to return.
+
+## **Complete Python built-in data types**
+
+| Category | Data types                         |
+| -------- | ---------------------------------- |
+| Numeric  | `int`, `float`, `complex`          |
+| Text     | `str`                              |
+| Boolean  | `bool`                             |
+| Sequence | `list`, `tuple`, `range`           |
+| Set      | `set`, `frozenset`                 |
+| Mapping  | `dict`                             |
+| Binary   | `bytes`, `bytearray`, `memoryview` |
+| Special  | `NoneType`                         |
+
+## **Important interview comparison**
+
+| Data type  | Ordered               | Mutable | Allows duplicates   |
+| ---------- | --------------------- | ------- | ------------------- |
+| List       | Yes                   | Yes     | Yes                 |
+| Tuple      | Yes                   | No      | Yes                 |
+| Set        | No guaranteed order   | Yes     | No                  |
+| Dictionary | Yes (insertion order) | Yes     | Keys must be unique |
+| String     | Yes                   | No      | Yes                 |
