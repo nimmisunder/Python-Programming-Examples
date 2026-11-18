@@ -17,3 +17,10 @@ you are required to find the runner-up score. You are given  scores. Store them 
      arr = map(int, input().split()) 
      sorted_a = sorted(set(arr))
      print(sorted_a[-2])
+
+2.You are given a string and your task is to swap cases. In other words, convert all lowercase letters to uppercase letters and vice versa.
+
+For Example:
+
+Www.HackerRank.com → wWW.hACKERrANK.COM
+Pythonist 2 → pYTHONIST 2  
