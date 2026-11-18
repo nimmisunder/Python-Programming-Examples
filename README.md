@@ -24,6 +24,8 @@ For Example:
 
 Www.HackerRank.com → wWW.hACKERrANK.COM
 Pythonist 2 → pYTHONIST 2  
+
+
                 def swap_case(s):
               ns=''
               for ch in s:
@@ -37,7 +39,7 @@ Pythonist 2 → pYTHONIST 2
                       
               return ns
           
-          if __name__ == '__main__':
-              s = input()
-              result = swap_case(s)
-              print(result)
+               if __name__ == '__main__':
+                   s = input()
+                   result = swap_case(s)
+                   print(result)
