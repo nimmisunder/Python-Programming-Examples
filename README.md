@@ -24,3 +24,20 @@ For Example:
 
 Www.HackerRank.com → wWW.hACKERrANK.COM
 Pythonist 2 → pYTHONIST 2  
+                def swap_case(s):
+              ns=''
+              for ch in s:
+                  if ch.isupper():
+                      ns+=ch.lower()
+                  elif ch.islower():
+                      ns+=ch.upper()
+                  else:
+                      ns+=ch
+                  
+                      
+              return ns
+          
+          if __name__ == '__main__':
+              s = input()
+              result = swap_case(s)
+              print(result)
