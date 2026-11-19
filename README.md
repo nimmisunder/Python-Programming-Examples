@@ -43,3 +43,67 @@ Pythonist 2 → pYTHONIST 2
                    s = input()
                    result = swap_case(s)
                    print(result)
+
+How do you reverse an array in Python?
+          Method 1: Using slicing
+          arr = [1, 2, 3, 4, 5]print(arr[::-1])
+
+
+
+          Output:
+          [5, 4, 3, 2, 1]
+
+
+          Method 2: Using reverse()
+          arr = [1, 2, 3, 4, 5]arr.reverse()print(arr)
+
+
+
+          Method 3: Using reversed()
+          arr = [1, 2, 3, 4, 5]result = list(reversed(arr))print(result)
+
+
+
+          Interview distinction:
+          - reverse() modifies the original list.
+          - reversed() returns an iterator.
+          - [::-1] creates a reversed copy.
+
+     How do you update a dictionary?
+           employee = {
+                   "name": "John",
+                   "salary": 30000
+               }
+               
+               employee["salary"] = 40000
+               
+               employee["department"] = "IT"
+               
+               print(employee)
+
+
+Two Sum Problem
+Important coding question
+Question: Given an array of integers and a target value, find the indices of two numbers whose sum equals the target.
+               
+               Example:
+               nums = [2, 7, 11, 15]target = 9
+               
+               
+               
+               Expected output:
+               [0, 1]
+               
+               
+               Because:
+               nums[0] + nums[1]
+               2 + 7 = 9
+               
+               
+               Solution using a dictionary (Hash Map):
+               def two_sum(nums, target):    seen = {}    for i, num in enumerate(nums):        difference = target - num        if difference in seen:            return [seen[difference], i]        seen[num] = i    return []nums = [2, 7, 11, 15]print(two_sum(nums, 9))
+               
+               
+               
+               Output:
+[0, 1]
