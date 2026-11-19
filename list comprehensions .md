@@ -130,53 +130,28 @@ Let's test your understanding. Try these without looking at the answers.
 
 **Python practice**
 
-4 questions
 
 **Q1. Create a list containing squares of numbers from 1 to 10.**
 
 sq=[num\*\*2 for num in range(1,11)]\<br>print(sq)
 
-Hide answer Copy
 
-Correct expression
-
-`{q.a}`
-
-Use range(1, 11) and x\*\*2.
 
 **Q2. Extract numbers greater than 5 from this list.**
 
 num=[num for num in sq if num>5]
 
-Hide answer Copy
 
-Correct expression
 
-`{q.a}`
-
-Use an if condition after the for loop.
 
 **Q3. Convert all names to uppercase.**
 
 uppernae=[name.upper for name in names]
 
-Hide answer Copy
-
-Correct expression
-
-`{q.a}`
-
-Use the upper() string method.
 
 **Q4. Replace negative numbers with 0, keeping positive numbers unchanged.**
 
-Hide answer Copy
 
-Correct expression
-
-`{q.a}`
-
-Use if-else before the for loop.
 
 ## **Interview tips / Important points to remember**
 
