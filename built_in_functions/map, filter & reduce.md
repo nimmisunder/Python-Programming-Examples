@@ -11,8 +11,12 @@ reduce() – combines all elements into a single result.
 
 These are Python functional programming tools used to process collections.
 A. map() – Transform every element
+
 Example: Square every number.
-numbers = [1, 2, 3, 4, 5]result = list(map(lambda x: x * x, numbers))print(result)
+
+numbers = [1, 2, 3, 4, 5]
+result = list(map(lambda x: x * x, numbers))
+print(result)
 
 
 
@@ -23,7 +27,9 @@ Output:
 Remember: map() applies a function to every element.
 B. filter() – Select elements based on a condition
 Example: Find even numbers.
-numbers = [1, 2, 3, 4, 5, 6]result = list(filter(lambda x: x % 2 == 0, numbers))print(result)
+numbers = [1, 2, 3, 4, 5, 6]
+result = list(filter(lambda x: x % 2 == 0, numbers)
+)print(result)
 
 
 
