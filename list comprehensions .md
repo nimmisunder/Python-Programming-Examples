@@ -9,7 +9,11 @@ Instead of writing a `for` loop and using `append()`, we can create a list in a 
 **Traditional approach:**
 
 ```
-numbers = [1, 2, 3, 4, 5]squares = []for num in numbers:    squares.append(num * num)print(squares)
+numbers = [1, 2, 3, 4, 5]
+squares = []
+for num in numbers:
+ squares.append(num * num)
+print(squares)
 ```
 
 Output:
@@ -21,7 +25,9 @@ Output:
 **Using list comprehension:**
 
 ```
-numbers = [1, 2, 3, 4, 5]squares = [num * num for num in numbers]print(squares)
+numbers = [1, 2, 3, 4, 5]
+squares = [num * num for num in numbers]
+print(squares)
 ```
 
 Output:
@@ -52,7 +58,9 @@ Understand each part:
 Suppose you want only even numbers.
 
 ```
-numbers = [1, 2, 3, 4, 5, 6, 7, 8]even = [num for num in numbers if num % 2 == 0]print(even)
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+even = [num for num in numbers if num % 2 == 0]
+print(even)
 ```
 
 Output:
@@ -78,7 +86,9 @@ Syntax:
 Suppose you want to label numbers as Even or Odd.
 
 ```
-numbers = [1, 2, 3, 4, 5]result = ["Even" if num % 2 == 0 else "Odd" for num in numbers]print(result)
+numbers = [1, 2, 3, 4, 5]result =
+ ["Even" if num % 2 == 0 else "Odd"
+for num in numbers]print(result)
 ```
 
 Output:
